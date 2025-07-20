@@ -1,6 +1,5 @@
 /* Global styles and component-specific CSS */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat:wght@400..700&family=Oswald:wght@200..700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,10 +7,10 @@
 }
 
 body {
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-family: "Alfa Slab One", serif;
   line-height: 1.6;
-  color: #2c3e50;
-  background: #f8f9fa;
+  color: #050505;
+  background: #8fb8e2;
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -32,7 +31,7 @@ body {
 }
 
 .list-header h2 {
-  color: #2c3e50;
+  color: #000000;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -231,7 +230,7 @@ body {
 }
 
 .random-header h2 {
-  color: #2c3e50;
+  color: black;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
