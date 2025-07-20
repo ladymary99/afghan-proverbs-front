@@ -1,0 +1,355 @@
+/* Global styles and component-specific CSS */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* ProverbsList Component Styles */
+.proverbs-list {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.list-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.list-header h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.search-box,
+.category-filter {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.category-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e1e8ed;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+}
+
+.proverbs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.proverb-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e1e8ed;
+}
+
+.proverb-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.proverb-content {
+  margin-bottom: 1rem;
+}
+
+.proverb-text p {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+.category-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.category-tag.large {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.proverb-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.no-proverbs {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin: 2rem 0;
+}
+
+.results-count {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e1e8ed;
+}
+
+/* ProverbDetail Component Styles */
+.proverb-detail {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.detail-header h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.detail-content {
+  margin-bottom: 2rem;
+}
+
+.proverb-texts {
+  margin-bottom: 2rem;
+}
+
+.text-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(248, 249, 250, 0.8);
+  border-radius: 15px;
+  border-left: 4px solid #4a90e2;
+}
+
+.text-section h3 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.proverb-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(248, 249, 250, 0.5);
+  border-radius: 10px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.meta-item strong {
+  color: #2c3e50;
+}
+
+.detail-footer {
+  border-top: 1px solid #e1e8ed;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.cultural-note {
+  color: #7f8c8d;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+/* RandomProverb Component Styles */
+.random-proverb {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.random-header {
+  margin-bottom: 2rem;
+}
+
+.random-header h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.random-header p {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.random-content {
+  margin-bottom: 2rem;
+}
+
+.proverb-display {
+  background: rgba(248, 249, 250, 0.8);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 2px solid #e1e8ed;
+}
+
+.proverb-category {
+  margin-top: 1rem;
+}
+
+.random-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.wisdom-quote {
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1),
+    rgba(118, 75, 162, 0.1)
+  );
+  border-radius: 15px;
+  padding: 1.5rem;
+  border-left: 4px solid #667eea;
+}
+
+.wisdom-quote p {
+  color: #5a6c7d;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.no-proverb {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .proverbs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-box,
+  .category-filter {
+    max-width: 100%;
+  }
+
+  .detail-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .detail-actions {
+    justify-content: center;
+  }
+
+  .random-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .meta-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-section {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .proverb-detail,
+  .proverbs-list,
+  .random-proverb,
+  .proverb-form {
+    margin: 0 0.5rem;
+    padding: 1rem;
+  }
+
+  .app-main {
+    padding: 0.5rem;
+  }
+
+  .app-header {
+    padding: 1rem;
+  }
+
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+}
