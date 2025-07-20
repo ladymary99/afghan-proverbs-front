@@ -66,7 +66,7 @@ const RandomProverb = ({ onViewProverb }) => {
   return (
     <div className="random-proverb">
       <div className="random-header">
-        <h2>🎲 Random Proverb</h2>
+        <h2>Random Proverb</h2>
         <p>Discover wisdom through chance</p>
       </div>
 
@@ -115,7 +115,7 @@ const RandomProverb = ({ onViewProverb }) => {
             className="new-random-button"
             disabled={loading}
           >
-            🎲 New Random Proverb
+            New Random Proverb
           </button>
 
           {proverb.id && (
@@ -123,7 +123,7 @@ const RandomProverb = ({ onViewProverb }) => {
               onClick={() => onViewProverb(proverb.id)}
               className="view-details-button"
             >
-              👁️ View Full Details
+              View Full Details
             </button>
           )}
         </div>
@@ -131,8 +131,8 @@ const RandomProverb = ({ onViewProverb }) => {
 
       <div className="wisdom-quote">
         <p>
-          💫 "Wisdom is not a product of schooling but of the lifelong attempt
-          to acquire it." - Afghan wisdom passed through generations
+          "Wisdom is not a product of schooling but of the lifelong attempt to
+          acquire it." - Afghan wisdom passed through generations
         </p>
       </div>
     </div>

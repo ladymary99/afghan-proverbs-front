@@ -8,23 +8,20 @@
 }
 
 .app-header {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
   padding: 1rem 1rem;
-  text-align: center;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid black;
 }
 
 .app-header h1 {
-  font-size: 2.5rem;
+  font-family: "Alfa Slab One", serif;
+  font-size: 3.5rem;
   font-weight: 400;
   color: #000000;
   margin: 0;
 }
 
 .app-header p {
-  font-size: 1.1rem;
+  font-family: "Alfa Slab One", serif;
+  font-size: 0.7rem;
   color: #4c6279;
   margin: 0;
   font-style: italic;
@@ -56,10 +53,7 @@
 
 /* Navigation Styles */
 .navigation {
-  background: rgba(255, 255, 255, 0.644);
-  backdrop-filter: blur(10px);
   padding: 1rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-list {
@@ -67,9 +61,8 @@
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .nav-item {
@@ -82,9 +75,9 @@
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   background: white;
-  border: 2px solid #e1e8ed;
+  border: none;
   border-radius: 50px;
-  color: #2c3e50;
+  color: #4c6279;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -93,20 +86,20 @@
 }
 
 .nav-button:hover {
-  background: #4a90e2;
-  color: white;
+  background: #4c6279;
+  color: black;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
 }
 
 .nav-button.active {
-  background: #4a90e2;
-  color: white;
-  border-color: #4a90e2;
+  background: #4c6279;
+  color: black;
+  border: none;
 }
 
-.nav-icon {
-  font-size: 1.2rem;
+img {
+  width: 25px;
 }
 
 .nav-label {
@@ -272,21 +265,13 @@
 }
 
 .edit-button {
-  background: #f39c12;
+  background: #ffc363;
   color: white;
-}
-
-.edit-button:hover {
-  background: #e67e22;
 }
 
 .delete-button {
-  background: #e74c3c;
+  background: #ff7e6f;
   color: white;
-}
-
-.delete-button:hover {
-  background: #c0392b;
 }
 
 .view-button,

@@ -5,7 +5,7 @@ import ProverbDetail from "./components/ProverbDetail";
 import AddProverb from "./components/AddProverb";
 import EditProverb from "./components/EditProverb";
 import RandomProverb from "./components/RandomProverb";
-import Navigation from "./components/Navigation";
+import Header from "./components/Header";
 import * as proverbsAPI from "./services/proverbsAPI";
 
 function App() {
@@ -125,12 +125,8 @@ function App() {
 
   return (
     <div className="app">
-      <header className="app-header">
-        <h1>Afghan Proverbs & Sayings</h1>
-        <p>Explore the wisdom of Afghan culture through traditional proverbs</p>
-      </header>
-
-      <Navigation currentView={currentView} onViewChange={setCurrentView} />
+      {/* <p>Explore the wisdom of Afghan culture through traditional proverbs</p> */}
+      <Header currentView={currentView} onViewChange={setCurrentView} />
 
       {error && (
         <div className="error-message">

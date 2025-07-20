@@ -11,13 +11,13 @@ const ProverbDetail = ({ proverb, onEdit, onDelete }) => {
         <h2>Proverb Details</h2>
         <div className="detail-actions">
           <button onClick={() => onEdit(proverb)} className="edit-button">
-            ✏️ Edit
+            Edit
           </button>
           <button
             onClick={() => onDelete(proverb.id)}
             className="delete-button"
           >
-            🗑️ Delete
+            Delete
           </button>
         </div>
       </div>
@@ -74,7 +74,7 @@ const ProverbDetail = ({ proverb, onEdit, onDelete }) => {
 
       <div className="detail-footer">
         <p className="cultural-note">
-          🌟 This proverb represents the rich cultural wisdom of Afghanistan,
+          This proverb represents the rich cultural wisdom of Afghanistan,
           passed down through generations to teach valuable life lessons.
         </p>
       </div>
